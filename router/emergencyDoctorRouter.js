@@ -1,5 +1,5 @@
 import express from 'express';
-import { createEmergencyDoctor, getEmergencyDoctors, updateEmergencyDoctor, deleteEmergencyDoctor } from '../controller/emergencydoctorController.js';
+import { createEmergencyDoctor, getEmergencyDoctors, updateEmergencyDoctor, deleteEmergencyDoctor } from '../controller/emergencyDoctorController.js';
 import { protect } from '../middleware/authMiddleware.js';
 
 const router = express.Router();
