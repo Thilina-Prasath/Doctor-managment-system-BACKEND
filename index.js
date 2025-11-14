@@ -4,7 +4,7 @@ import cors from 'cors';
 import mongoose from 'mongoose';
 import userRoutes from './router/userRouter.js';
 import doctorRoutes from './router/doctorRouter.js';
-import emergencyDoctorRoutes from './router/emergencydoctorRouter.js';
+import emergengencyDoctorRoutes from './router/emergencyDoctorRouter.js';
 
 dotenv.config();
 
@@ -30,7 +30,7 @@ mongoose.connect(process.env.MONGO_URI)
 // API Routes
 app.use('/api/users', userRoutes);
 app.use('/api/doctors', doctorRoutes);
-app.use('/api/emergencydoctors', emergencyDoctorRoutes);
+app.use('/api/emergencydoctors', emergengencyDoctorRoutes);
 
 app.get('/', (req, res) => {
     res.send('API is running...');
